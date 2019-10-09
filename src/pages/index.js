@@ -1,7 +1,7 @@
 import Home from './home';
-import Sugest from './sugest';
+import Suggest from './suggest';
 
 export {
     Home,
-    Sugest
+    Suggest
 }

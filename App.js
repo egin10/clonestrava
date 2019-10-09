@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import {StatusBar} from 'react-native';
 import {Scene, Router} from 'react-native-router-flux';
-import {Home, Sugest} from './src/pages';
+import {Home, Suggest} from './src/pages';
 
 class App extends Component {
   render(){
@@ -11,7 +11,7 @@ class App extends Component {
         <Router>
           <Scene key='root' hideNavBar>
             <Scene key='home' component={Home} initial/>
-            <Scene key='sugest' component={Sugest}/>
+            <Scene key='suggest' component={Suggest}/>
           </Scene>
         </Router>
       </>

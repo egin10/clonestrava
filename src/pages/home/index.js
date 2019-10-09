@@ -18,7 +18,7 @@ class Home extends Component {
                         <Text style={styles.textMenu}>Feed</Text>
                     </View>
                     <View style={styles.menuRight}>
-                        <TouchableOpacity onPress={() => Actions.sugest()}>
+                        <TouchableOpacity onPress={() => Actions.suggest()}>
                             <Icon
                                 name='md-people'
                                 color='#fff'

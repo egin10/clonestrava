@@ -6,7 +6,7 @@ import styles from './styles';
 
 import HeaderFinder from '../../components/HeaderFinder';
 
-class Sugest extends Component {
+class Suggest extends Component {
     render() {
         return (
             <View style={styles.container}>
@@ -33,4 +33,4 @@ class Sugest extends Component {
     }
 }
 
-export default Sugest;
+export default Suggest;
