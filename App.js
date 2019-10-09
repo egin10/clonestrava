@@ -1,18 +1,22 @@
-import React from 'react';
-import {
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
-import {Home} from './src/pages';
+import React,{Component} from 'react';
+import {StatusBar} from 'react-native';
+import {Scene, Router} from 'react-native-router-flux';
+import {Home, Sugest} from './src/pages';
 
-const App  = () => {
-  return (
-    <>
-      <StatusBar barStyle="light-content"/>
-      <Home/>
-    </>
-  );
+class App extends Component {
+  render(){
+    return (
+      <>
+        <StatusBar barStyle="light-content"/>
+        <Router>
+          <Scene key='root' hideNavBar>
+            <Scene key='home' component={Home} initial/>
+            <Scene key='sugest' component={Sugest}/>
+          </Scene>
+        </Router>
+      </>
+    );
+  }
 };
 
 export default App;

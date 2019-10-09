@@ -5,6 +5,7 @@
 * [React 16.9.0](https://reactjs.org/docs/getting-started.html)
 * [oblador/react-native-vector-icons ^6.6.0](https://github.com/oblador/react-native-vector-icons)
 * [zloirock/core-js 3.2.1](https://github.com/zloirock/core-js)
+* [aksonov/react-native-router-flux 4.0.6](https://github.com/aksonov/react-native-router-flux/blob/master/README3.md)
 ---
 
 ### Usage
