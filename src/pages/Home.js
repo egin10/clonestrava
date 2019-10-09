@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 class Home extends Component {
@@ -27,6 +27,12 @@ class Home extends Component {
                     </View>
                 </View>
                 <View style={styles.content}>
+                    <View style={styles.friendIcon}>
+                        <Icon
+                            name='md-person-add'
+                            color='#FB5200'
+                            size={35}/>
+                    </View>
                     <Text style={styles.textHeader}>
                         Build your community
                     </Text>
@@ -34,6 +40,10 @@ class Home extends Component {
                         This is Where your friend's activities will appear.
                         Follow your most active friends using Strava to track their adventures and share some encouragement.
                     </Text>
+                    <TouchableOpacity
+                        style={styles.btnContent}>
+                        <Text style={styles.txtBtnContent}>Find Friends on Strava</Text>
+                    </TouchableOpacity>
                 </View>
                 <View style={styles.bottom}>
                     <View style={styles.btnPlus}>
@@ -78,6 +88,16 @@ const styles = {
         alignItems: 'center',
         paddingHorizontal: 22,
     },
+    friendIcon: {
+        borderWidth: 1, 
+        borderColor: '#FB5200',
+        width: 72,
+        height: 72,
+        borderRadius: 50,
+        marginBottom: 10,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
     textHeader: {
         fontSize: 16,
     },
@@ -85,6 +105,20 @@ const styles = {
         fontSize: 14, 
         color: '#76777C', 
         textAlign: 'center',
+        marginTop: 10,
+        marginBottom: 23,
+    },
+    btnContent: {
+        backgroundColor:'#FB5200',
+        width: '100%',
+        height: 43,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    txtBtnContent: {
+        color:'#fff', 
+        fontSize: 14, 
+        fontWeight: 'bold'
     },
     btnPlus: {
         backgroundColor:'#FB5200', 
